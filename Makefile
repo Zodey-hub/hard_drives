@@ -4,12 +4,13 @@
 #
 
 # define the Cpp compiler to use
-CXX = clang++
+CXX = g++
 
 # define any compile-time flags
-#CXXFLAGS	:= -std=c++20 -Wall -Wextra -g
+#CXXFLAGS	:= -Wall -Wextra -g
+
 #release
-CXXFLAGS	:= -std=c++20 -O3
+CXXFLAGS	:= -Ofast -flto -s -march=native
 
 # define library paths in addition to /usr/lib
 #   if I wanted to include libraries not in /usr/lib I'd specify
